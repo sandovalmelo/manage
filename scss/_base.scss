@@ -3,8 +3,10 @@ $bright-red: hsl(12, 88%, 59%);
 $dark-blue: hsl(228, 39%, 23%);
 $grayish-blue: hsl(227, 12%, 61%);
 $dark-gray: hsl(233, 12%, 13%);
+$dark-gray-opacity: hsla(233, 12%, 13%, 0.5);
 $pale-red: hsl(13, 100%, 96%);
 $light-gray: hsl(0, 0%, 98%);
+$light-gray-opacity: hsla(0, 0%, 98%, 0.1);
 
 *,
 *::after,
@@ -21,4 +23,13 @@ body {
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+li {
+	list-style: none;
 }
