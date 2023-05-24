@@ -8,6 +8,7 @@
 
 body {
   font-family: "Be Vietnam Pro", sans-serif;
+  color: hsl(227, 12%, 61%);
 }
 
 a {
@@ -24,24 +25,44 @@ li {
   list-style: none;
 }
 
+h1,
+h2,
+h3 {
+  color: hsl(228, 39%, 23%);
+}
+
+.btn {
+  font-family: inherit;
+  border: none;
+  height: 2.5rem;
+  padding: 0 1.5rem;
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+.primary-btn {
+  background-color: hsl(12, 88%, 59%);
+  color: hsl(13, 100%, 96%);
+}
+
 .menu {
-  padding: 3rem 1.5rem;
   position: relative;
+  height: 5rem;
 }
 .menu-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
   padding: 2rem 1.5rem;
-  height: 83px;
+  height: 5rem;
 }
 .menu-logo {
-  max-width: 120px;
+  max-width: 7.5rem;
 }
 .menu-close {
   display: none;
@@ -77,6 +98,9 @@ li {
   visibility: hidden;
 }
 
+.menu[data-open=true] .menu-header {
+  position: fixed;
+}
 .menu[data-open=true] .menu-close {
   display: block;
   visibility: visible;
@@ -88,6 +112,22 @@ li {
 .menu[data-open=true] .menu-nav {
   display: block;
   visibility: visible;
+}
+
+.hero {
+  padding: 0 1.5rem 2rem;
+  text-align: center;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.hero-title {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.hero-text {
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

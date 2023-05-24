@@ -18,6 +18,7 @@ $light-gray-opacity: hsla(0, 0%, 98%, 0.1);
 
 body {
 	font-family: "Be Vietnam Pro", sans-serif;
+	color: $grayish-blue;
 }
 
 a {
@@ -32,4 +33,24 @@ img {
 
 li {
 	list-style: none;
+}
+
+h1,
+h2,
+h3 {
+	color: $dark-blue;
+}
+
+.btn {
+	font-family: inherit;
+	border: none;
+	height: 2.5rem;
+	padding: 0 1.5rem;
+	border-radius: 100px;
+	font-weight: 500;
+}
+
+.primary-btn {
+	background-color: $bright-red;
+	color: $pale-red;
 }

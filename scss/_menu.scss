@@ -1,22 +1,22 @@
 .menu {
-	padding: 3rem 1.5rem;
 	position: relative;
+	height: 5rem;
 
 	&-header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		position: fixed;
+		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		z-index: 100;
 		padding: 2rem 1.5rem;
-		height: 83px;
+		height: 5rem;
 	}
 
 	&-logo {
-		max-width: 120px;
+		max-width: 7.5rem;
 	}
 
 	&-close {
@@ -60,6 +60,10 @@
 }
 
 .menu[data-open="true"] {
+	.menu-header {
+		position: fixed;
+	}
+
 	.menu-close {
 		display: block;
 		visibility: visible;
