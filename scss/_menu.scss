@@ -12,13 +12,21 @@
 		width: 100%;
 		z-index: 100;
 		padding: 2rem 1.5rem;
+		height: 83px;
 	}
 
 	&-logo {
 		max-width: 120px;
 	}
 
+	&-close {
+		display: none;
+		visibility: hidden;
+	}
+
 	&-nav {
+		display: none;
+		visibility: hidden;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -51,9 +59,19 @@
 	}
 }
 
-.menu[data-open="false"] {
+.menu[data-open="true"] {
 	.menu-close {
+		display: block;
+		visibility: visible;
+	}
+
+	.menu-open {
 		display: none;
 		visibility: hidden;
+	}
+
+	.menu-nav {
+		display: block;
+		visibility: visible;
 	}
 }
