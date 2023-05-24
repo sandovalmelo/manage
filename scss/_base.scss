@@ -1,0 +1,24 @@
+// colors
+$bright-red: hsl(12, 88%, 59%);
+$dark-blue: hsl(228, 39%, 23%);
+$grayish-blue: hsl(227, 12%, 61%);
+$dark-gray: hsl(233, 12%, 13%);
+$pale-red: hsl(13, 100%, 96%);
+$light-gray: hsl(0, 0%, 98%);
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Be Vietnam Pro", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
