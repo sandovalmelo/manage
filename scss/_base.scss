@@ -51,12 +51,17 @@ h2 {
 	height: 2.5rem;
 	padding: 0 1.5rem;
 	border-radius: 100px;
-	font-weight: 500;
+	font-weight: 700;
 }
 
 .primary-btn {
 	background-color: $bright-red;
 	color: $pale-red;
+}
+
+.secondary-btn {
+	background-color: $light-gray;
+	color: $bright-red;
 }
 
 p {

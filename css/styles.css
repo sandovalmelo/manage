@@ -41,12 +41,17 @@ h2 {
   height: 2.5rem;
   padding: 0 1.5rem;
   border-radius: 100px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .primary-btn {
   background-color: hsl(12, 88%, 59%);
   color: hsl(13, 100%, 96%);
+}
+
+.secondary-btn {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(12, 88%, 59%);
 }
 
 p {
@@ -212,6 +217,18 @@ p {
   top: -2rem;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.simplify {
+  background-color: hsl(12, 88%, 59%);
+  padding: 6rem 0;
+  text-align: center;
+}
+.simplify h2 {
+  color: hsl(0, 0%, 98%);
+  font-size: 2.25rem;
+  max-width: 20rem;
+  margin: 0 auto 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
