@@ -1,0 +1,38 @@
+.testimonials {
+	text-align: center;
+	padding-bottom: 2rem;
+
+	&-container {
+		overflow: hidden;
+	}
+
+	.slides {
+		display: flex;
+	}
+
+	&-card {
+		background-color: $light-gray;
+		padding: 4rem 2rem 2rem;
+		margin: 4rem 0;
+		position: relative;
+		top: 0;
+		left: 0;
+		flex: 1 0 100vw;
+		height: auto;
+
+		h2 {
+			font-size: 1rem;
+			margin-bottom: 1.5rem;
+		}
+
+		img {
+			$img-size: 5rem;
+			height: $img-size;
+			width: $img-size;
+			position: absolute;
+			top: -2rem;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
