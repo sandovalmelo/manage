@@ -231,4 +231,74 @@ p {
   margin: 0 auto 2rem;
 }
 
+.footer {
+  background-color: hsl(233, 12%, 13%);
+  padding: 4rem 1.5rem 6rem;
+  position: relative;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.footer-email form {
+  display: flex;
+  gap: 0.75rem;
+}
+.footer-email input {
+  height: 2.75rem;
+  flex-grow: 1;
+  border: none;
+  font-family: inherit;
+  padding: 0 1rem;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  color: hsl(0, 0%, 98%);
+}
+.footer-email button {
+  height: 2.75rem;
+  width: 5rem;
+  background-color: hsl(12, 88%, 59%);
+  color: hsl(0, 0%, 98%);
+  font-family: inherit;
+  font-weight: 700;
+  border: none;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+.footer .copyright {
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding: 0 1.5rem;
+}
+.footer-links a {
+  color: hsl(0, 0%, 98%);
+  padding: 0.5rem 0;
+  display: inline-block;
+}
+.footer-header {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.footer-header__logo img {
+  margin: 0 auto;
+}
+.footer .social-media {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.footer .social-media img {
+  flex-grow: 1;
+}
+
 /*# sourceMappingURL=styles.css.map */

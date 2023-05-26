@@ -1,0 +1,86 @@
+.footer {
+	background-color: $dark-gray;
+	padding: 4rem 1.5rem 6rem;
+	position: relative;
+
+	.container {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	&-email {
+		$height: 2.75rem;
+
+		form {
+			display: flex;
+			gap: 0.75rem;
+		}
+
+		input {
+			height: $height;
+			flex-grow: 1;
+			border: none;
+			font-family: inherit;
+			padding: 0 1rem;
+			border-radius: 100px;
+			font-size: 0.75rem;
+			color: $light-gray;
+		}
+
+		button {
+			height: $height;
+			width: 5rem;
+			background-color: $bright-red;
+			color: $light-gray;
+			font-family: inherit;
+			font-weight: 700;
+			border: none;
+			border-radius: 100px;
+			text-transform: uppercase;
+		}
+	}
+
+	.copyright {
+		font-size: 0.8rem;
+		position: absolute;
+		bottom: 2rem;
+		left: 0;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	&-links {
+		display: flex;
+		justify-content: space-between;
+		margin: 2rem 0;
+		padding: 0 1.5rem;
+
+		a {
+			color: $light-gray;
+			padding: 0.5rem 0;
+			display: inline-block;
+		}
+	}
+
+	&-header {
+		display: flex;
+		flex-direction: column-reverse;
+
+		&__logo {
+			img {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.social-media {
+		display: flex;
+		gap: 2rem;
+		margin-bottom: 4rem;
+
+		img {
+			flex-grow: 1;
+		}
+	}
+}
