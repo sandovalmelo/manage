@@ -31,6 +31,10 @@ h3 {
   color: hsl(228, 39%, 23%);
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 .btn {
   font-family: inherit;
   border: none;
@@ -43,6 +47,11 @@ h3 {
 .primary-btn {
   background-color: hsl(12, 88%, 59%);
   color: hsl(13, 100%, 96%);
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .menu {
@@ -128,6 +137,48 @@ h3 {
 }
 .hero-text {
   margin-bottom: 1rem;
+}
+
+.about {
+  padding-bottom: 2rem;
+}
+.about-content {
+  padding: 0 1.5rem;
+  text-align: center;
+}
+.about-title {
+  margin: 1rem 0;
+}
+.about-text {
+  margin-bottom: 2rem;
+}
+.about-box {
+  margin-bottom: 1rem;
+}
+.about-box__header {
+  background-color: hsl(13, 100%, 96%);
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.about-box span {
+  background-color: hsl(12, 88%, 59%);
+  color: hsl(0, 0%, 98%);
+  width: 3.5rem;
+  height: 2.15rem;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.about-box h3 {
+  font-size: 0.9rem;
+  display: inline;
+  margin-left: 0.5rem;
+}
+.about-box__text {
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

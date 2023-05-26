@@ -1,0 +1,49 @@
+.about {
+	padding-bottom: 2rem;
+
+	&-content {
+		padding: 0 1.5rem;
+		text-align: center;
+	}
+
+	&-title {
+		margin: 1rem 0;
+	}
+
+	&-text {
+		margin-bottom: 2rem;
+	}
+
+	&-box {
+		margin-bottom: 1rem;
+
+		&__header {
+			background-color: $pale-red;
+			margin-left: 1.5rem;
+			margin-bottom: 0.5rem;
+		}
+
+		span {
+			background-color: $bright-red;
+			color: $light-gray;
+			width: 3.5rem;
+			height: 2.15rem;
+			border-radius: 100px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 0.9rem;
+			font-weight: 500;
+		}
+
+		h3 {
+			font-size: 0.9rem;
+			display: inline;
+			margin-left: 0.5rem;
+		}
+
+		&__text {
+			padding: 0 1rem;
+		}
+	}
+}

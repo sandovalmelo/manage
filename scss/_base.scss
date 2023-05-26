@@ -41,6 +41,10 @@ h3 {
 	color: $dark-blue;
 }
 
+h2 {
+	font-size: 1.5rem;
+}
+
 .btn {
 	font-family: inherit;
 	border: none;
@@ -53,4 +57,9 @@ h3 {
 .primary-btn {
 	background-color: $bright-red;
 	color: $pale-red;
+}
+
+p {
+	font-size: 0.9rem;
+	line-height: 1.6;
 }
