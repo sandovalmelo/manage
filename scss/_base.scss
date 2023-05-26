@@ -19,6 +19,8 @@ $light-gray-opacity: hsla(0, 0%, 98%, 0.1);
 body {
 	font-family: "Be Vietnam Pro", sans-serif;
 	color: $grayish-blue;
+	background: url("./../images/bg-tablet-pattern.svg") no-repeat 4rem -4rem / contain,
+		url("./../images/bg-tablet-pattern.svg") no-repeat right -15rem top 23rem / contain;
 }
 
 a {

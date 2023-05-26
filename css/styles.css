@@ -9,6 +9,7 @@
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   color: hsl(227, 12%, 61%);
+  background: url("./../images/bg-tablet-pattern.svg") no-repeat 4rem -4rem/contain, url("./../images/bg-tablet-pattern.svg") no-repeat right -15rem top 23rem/contain;
 }
 
 a {
@@ -129,7 +130,7 @@ p {
 }
 
 .hero {
-  padding: 0 1.5rem 2rem;
+  padding: 0 1.5rem 4rem;
   text-align: center;
 }
 .hero .container {
@@ -220,9 +221,9 @@ p {
 }
 
 .simplify {
-  background-color: hsl(12, 88%, 59%);
   padding: 6rem 0;
   text-align: center;
+  background: hsl(12, 88%, 59%) url("./../images/bg-simplify-section-mobile.svg") no-repeat 0 50%;
 }
 .simplify h2 {
   color: hsl(0, 0%, 98%);
