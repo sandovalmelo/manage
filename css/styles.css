@@ -60,55 +60,24 @@ p {
   line-height: 1.6;
 }
 
+.container {
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
 .menu {
   position: relative;
-  height: 5rem;
-}
-.menu-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  padding: 2rem 1.5rem;
   height: 5rem;
 }
 .menu-logo {
   max-width: 7.5rem;
 }
+.menu-open {
+  display: none;
+  visibility: hidden;
+}
 .menu-close {
-  display: none;
-  visibility: hidden;
-}
-.menu-nav {
-  display: none;
-  visibility: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: linear-gradient(hsla(0, 0%, 98%, 0.1), hsla(233, 12%, 13%, 0.5));
-  width: 100%;
-  height: 100vh;
-  padding: 6rem 1.5rem 0;
-  z-index: 50;
-}
-.menu-nav ul {
-  background-color: white;
-  padding: 2rem 1.5rem;
-  border-radius: 4px;
-}
-.menu-nav li {
-  padding: 0.75rem 0;
-  text-align: center;
-}
-.menu-nav a {
-  color: hsl(228, 39%, 23%);
-  font-weight: 700;
-}
-.menu .btn {
   display: none;
   visibility: hidden;
 }
@@ -129,6 +98,75 @@ p {
   visibility: visible;
 }
 
+@media (max-width: 890px) {
+  .menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 5rem;
+  }
+  .menu-open {
+    display: block;
+    visibility: visible;
+  }
+  .menu-nav {
+    display: none;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(hsla(0, 0%, 98%, 0.1), hsla(233, 12%, 13%, 0.5));
+    width: 100%;
+    height: 100vh;
+    padding: 5rem 1.5rem 0;
+    z-index: 50;
+  }
+  .menu-nav ul {
+    background-color: white;
+    padding: 2rem 1.5rem;
+    border-radius: 4px;
+  }
+  .menu-nav li {
+    padding: 0.75rem 0;
+    text-align: center;
+  }
+  .menu-nav a {
+    color: hsl(228, 39%, 23%);
+    font-weight: 700;
+  }
+  .menu .btn {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media (min-width: 891px) {
+  .menu {
+    padding: 3.5rem 0;
+  }
+  .menu .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-logo {
+    max-width: 8rem;
+  }
+  .menu-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.75rem;
+  }
+  .menu-nav a {
+    color: hsl(228, 39%, 23%);
+    font-weight: 500;
+  }
+}
 .hero {
   padding: 0 1.5rem 4rem;
   text-align: center;
@@ -297,6 +335,7 @@ p {
   display: flex;
   gap: 2rem;
   margin-bottom: 4rem;
+  padding: 0 1rem;
 }
 .footer .social-media img {
   flex-grow: 1;

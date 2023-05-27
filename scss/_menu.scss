@@ -2,58 +2,16 @@
 	position: relative;
 	height: 5rem;
 
-	&-header {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		z-index: 100;
-		padding: 2rem 1.5rem;
-		height: 5rem;
-	}
-
 	&-logo {
 		max-width: 7.5rem;
 	}
 
+	&-open {
+		display: none;
+		visibility: hidden;
+	}
+
 	&-close {
-		display: none;
-		visibility: hidden;
-	}
-
-	&-nav {
-		display: none;
-		visibility: hidden;
-		position: fixed;
-		top: 0;
-		left: 0;
-		background: linear-gradient($light-gray-opacity, $dark-gray-opacity);
-		width: 100%;
-		height: 100vh;
-		padding: 6rem 1.5rem 0;
-		z-index: 50;
-
-		ul {
-			background-color: white;
-			padding: 2rem 1.5rem;
-			border-radius: 4px;
-		}
-
-		li {
-			padding: 0.75rem 0;
-			text-align: center;
-		}
-
-		a {
-			color: $dark-blue;
-			font-weight: 700;
-		}
-	}
-
-	.btn {
 		display: none;
 		visibility: hidden;
 	}
@@ -77,5 +35,90 @@
 	.menu-nav {
 		display: block;
 		visibility: visible;
+	}
+}
+
+@media (max-width: 890px) {
+	.menu {
+		&-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 2rem 1.5rem;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 100;
+			height: 5rem;
+		}
+
+		&-open {
+			display: block;
+			visibility: visible;
+		}
+
+		&-nav {
+			display: none;
+			visibility: hidden;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background: linear-gradient($light-gray-opacity, $dark-gray-opacity);
+			width: 100%;
+			height: 100vh;
+			padding: 5rem 1.5rem 0;
+			z-index: 50;
+
+			ul {
+				background-color: white;
+				padding: 2rem 1.5rem;
+				border-radius: 4px;
+			}
+
+			li {
+				padding: 0.75rem 0;
+				text-align: center;
+			}
+
+			a {
+				color: $dark-blue;
+				font-weight: 700;
+			}
+		}
+
+		.btn {
+			display: none;
+			visibility: hidden;
+		}
+	}
+}
+
+@media (min-width: 891px) {
+	.menu {
+		padding: 3.5rem 0;
+
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		&-logo {
+			max-width: 8rem;
+		}
+
+		&-nav {
+			ul {
+				display: flex;
+				flex-direction: row;
+				gap: 1.75rem;
+			}
+
+			a {
+				color: $dark-blue;
+				font-weight: 500;
+			}
+		}
 	}
 }
