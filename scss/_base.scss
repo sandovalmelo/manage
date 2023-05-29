@@ -7,6 +7,7 @@ $dark-gray-opacity: hsla(233, 12%, 13%, 0.5);
 $pale-red: hsl(13, 100%, 96%);
 $light-gray: hsl(0, 0%, 98%);
 $light-gray-opacity: hsla(0, 0%, 98%, 0.1);
+$large-screens: 891px;
 
 *,
 *::after,
@@ -69,6 +70,10 @@ h2 {
 p {
 	font-size: 0.9rem;
 	line-height: 1.6;
+
+	@media (min-width: $large-screens) {
+		font-size: 1rem;
+	}
 }
 
 .container {

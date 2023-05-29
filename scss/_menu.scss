@@ -38,7 +38,7 @@
 	}
 }
 
-@media (max-width: 890px) {
+@media (max-width: $large-screens) {
 	.menu {
 		&-header {
 			display: flex;
@@ -94,7 +94,7 @@
 	}
 }
 
-@media (min-width: 891px) {
+@media (min-width: $large-screens) {
 	.menu {
 		padding: 3.5rem 0;
 
