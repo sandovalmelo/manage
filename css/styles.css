@@ -401,7 +401,6 @@ p {
   padding: 0 1rem;
   border-radius: 100px;
   font-size: 0.75rem;
-  color: hsl(0, 0%, 98%);
 }
 .footer-email button {
   height: 2.75rem;
@@ -449,6 +448,38 @@ p {
 }
 .footer .social-media img {
   flex-grow: 1;
+}
+
+@media (min-width: 891px) {
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-header {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer-links {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+  }
+  .footer .social-media {
+    margin-bottom: 0;
+  }
+  .footer-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer-email input {
+    width: 200px;
+  }
+  .footer .copyright {
+    position: unset;
+    text-align: right;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
