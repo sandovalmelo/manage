@@ -10,3 +10,23 @@
 		margin: 0 auto 2rem;
 	}
 }
+
+@media (min-width: $large-screens) {
+	.simplify {
+		background: $bright-red url("./../images/bg-simplify-section-desktop.svg") no-repeat right -4rem
+			top 85%;
+
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			h2 {
+				margin: 0;
+				max-width: 32rem;
+				text-align: left;
+				font-size: 2.5rem;
+			}
+		}
+	}
+}

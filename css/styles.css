@@ -197,6 +197,9 @@ p {
 .hero-text {
   margin-bottom: 1rem;
 }
+.hero-image img {
+  margin: 0 auto;
+}
 
 @media (min-width: 891px) {
   .hero {
@@ -361,6 +364,22 @@ p {
   margin: 0 auto 2rem;
 }
 
+@media (min-width: 891px) {
+  .simplify {
+    background: hsl(12, 88%, 59%) url("./../images/bg-simplify-section-desktop.svg") no-repeat right -4rem top 85%;
+  }
+  .simplify .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .simplify .container h2 {
+    margin: 0;
+    max-width: 32rem;
+    text-align: left;
+    font-size: 2.5rem;
+  }
+}
 .footer {
   background-color: hsl(233, 12%, 13%);
   padding: 4rem 1.5rem 6rem;
