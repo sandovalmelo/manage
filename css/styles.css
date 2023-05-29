@@ -240,8 +240,10 @@ p {
 }
 .about-box__header {
   background-color: hsl(13, 100%, 96%);
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   margin-bottom: 0.5rem;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
 }
 .about-box span {
   background-color: hsl(12, 88%, 59%);
@@ -280,7 +282,10 @@ p {
   .about-text {
     max-width: 25rem;
   }
-  .about .container {
+  .about-container {
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -313,10 +318,8 @@ p {
     padding-bottom: 10rem;
   }
 }
-@media (min-width: 891px) {
-  .testimonials-title {
-    padding-bottom: 2rem;
-  }
+.testimonials-title {
+  margin-bottom: 2rem;
 }
 .testimonials-container {
   overflow: hidden;
@@ -327,7 +330,7 @@ p {
 .testimonials-card {
   background-color: hsl(0, 0%, 98%);
   padding: 4rem 2rem 2rem;
-  margin: 4rem 0;
+  margin: 2rem 0;
   position: relative;
   top: 0;
   left: 0;
@@ -350,6 +353,20 @@ p {
   top: -2rem;
   left: 50%;
   transform: translateX(-50%);
+}
+.testimonials .slides-control {
+  margin-bottom: 2rem;
+}
+.testimonials .slides-control .control {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: solid 1px hsl(12, 88%, 59%);
+  border-radius: 50%;
+  margin: 0 2px;
+}
+.testimonials .slides-control .active {
+  background-color: hsl(12, 88%, 59%);
 }
 
 .simplify {

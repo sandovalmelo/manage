@@ -7,9 +7,7 @@
 	}
 
 	&-title {
-		@media (min-width: $large-screens) {
-			padding-bottom: 2rem;
-		}
+		margin-bottom: 2rem;
 	}
 
 	&-container {
@@ -23,7 +21,7 @@
 	&-card {
 		background-color: $light-gray;
 		padding: 4rem 2rem 2rem;
-		margin: 4rem 0;
+		margin: 2rem 0;
 		position: relative;
 		top: 0;
 		left: 0;
@@ -47,6 +45,24 @@
 			top: -2rem;
 			left: 50%;
 			transform: translateX(-50%);
+		}
+	}
+
+	.slides-control {
+		margin-bottom: 2rem;
+
+		.control {
+			$control-size: 10px;
+			width: $control-size;
+			height: $control-size;
+			display: inline-block;
+			border: solid 1px $bright-red;
+			border-radius: 50%;
+			margin: 0 2px;
+		}
+
+		.active {
+			background-color: $bright-red;
 		}
 	}
 }
