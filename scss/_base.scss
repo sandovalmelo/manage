@@ -24,8 +24,8 @@ body {
 		url("./../images/bg-tablet-pattern.svg") no-repeat right -15rem top 23rem / contain;
 
 	@media (min-width: $large-screens) {
-		background: url("./../images/bg-tablet-pattern.svg") no-repeat right -4rem top -14rem / auto;
-		// url("./../images/bg-tablet-pattern.svg") no-repeat left -15rem top 23rem / auto;
+		background: url("./../images/bg-tablet-pattern.svg") no-repeat right -4rem top -14rem / auto,
+			url("./../images/bg-tablet-pattern.svg") no-repeat left -35rem top 60% / auto;
 	}
 }
 

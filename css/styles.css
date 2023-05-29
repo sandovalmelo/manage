@@ -13,7 +13,7 @@ body {
 }
 @media (min-width: 891px) {
   body {
-    background: url("./../images/bg-tablet-pattern.svg") no-repeat right -4rem top -14rem/auto;
+    background: url("./../images/bg-tablet-pattern.svg") no-repeat right -4rem top -14rem/auto, url("./../images/bg-tablet-pattern.svg") no-repeat left -35rem top 60%/auto;
   }
 }
 
