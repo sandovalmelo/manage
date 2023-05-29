@@ -22,6 +22,11 @@ body {
 	color: $grayish-blue;
 	background: url("./../images/bg-tablet-pattern.svg") no-repeat 4rem -4rem / contain,
 		url("./../images/bg-tablet-pattern.svg") no-repeat right -15rem top 23rem / contain;
+
+	@media (min-width: $large-screens) {
+		background: url("./../images/bg-tablet-pattern.svg") no-repeat right -4rem top -14rem / auto;
+		// url("./../images/bg-tablet-pattern.svg") no-repeat left -15rem top 23rem / auto;
+	}
 }
 
 a {
@@ -46,6 +51,10 @@ h3 {
 
 h2 {
 	font-size: 1.5rem;
+
+	@media (min-width: $large-screens) {
+		font-size: 2.5rem;
+	}
 }
 
 .btn {
@@ -72,7 +81,7 @@ p {
 	line-height: 1.6;
 
 	@media (min-width: $large-screens) {
-		font-size: 1rem;
+		font-size: 1.1rem;
 	}
 }
 

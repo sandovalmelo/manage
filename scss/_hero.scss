@@ -19,7 +19,7 @@
 
 @media (min-width: $large-screens) {
 	.hero {
-		padding: 6rem 0;
+		padding: 8rem 0;
 		text-align: left;
 
 		.container {
@@ -30,11 +30,11 @@
 
 		&-title {
 			font-size: 3.5rem;
-			max-width: 600px;
+			max-width: 37.5rem;
 		}
 
 		&-text {
-			max-width: 400px;
+			max-width: 25rem;
 		}
 
 		&-image {

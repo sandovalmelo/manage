@@ -47,3 +47,53 @@
 		}
 	}
 }
+
+@media (min-width: $large-screens) {
+	.about {
+		padding: 6rem 0;
+
+		&-content {
+			padding: 0;
+			text-align: left;
+		}
+
+		&-title {
+			margin-top: 0;
+			margin-bottom: 2rem;
+			max-width: 37.5rem;
+		}
+
+		&-text {
+			max-width: 25rem;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		&-box {
+			margin-bottom: 2rem;
+
+			&__header {
+				margin-left: 0;
+				margin-bottom: 1rem;
+				background-color: transparent;
+			}
+
+			span {
+				width: 4rem;
+				height: 2.5rem;
+			}
+
+			h3 {
+				font-size: 1rem;
+				margin-left: 1.5rem;
+			}
+
+			&__text {
+				padding-left: 6rem;
+			}
+		}
+	}
+}

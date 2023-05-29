@@ -11,6 +11,11 @@ body {
   color: hsl(227, 12%, 61%);
   background: url("./../images/bg-tablet-pattern.svg") no-repeat 4rem -4rem/contain, url("./../images/bg-tablet-pattern.svg") no-repeat right -15rem top 23rem/contain;
 }
+@media (min-width: 891px) {
+  body {
+    background: url("./../images/bg-tablet-pattern.svg") no-repeat right -4rem top -14rem/auto;
+  }
+}
 
 a {
   text-decoration: none;
@@ -34,6 +39,11 @@ h3 {
 
 h2 {
   font-size: 1.5rem;
+}
+@media (min-width: 891px) {
+  h2 {
+    font-size: 2.5rem;
+  }
 }
 
 .btn {
@@ -61,7 +71,7 @@ p {
 }
 @media (min-width: 891px) {
   p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -190,7 +200,7 @@ p {
 
 @media (min-width: 891px) {
   .hero {
-    padding: 6rem 0;
+    padding: 8rem 0;
     text-align: left;
   }
   .hero .container {
@@ -200,10 +210,10 @@ p {
   }
   .hero-title {
     font-size: 3.5rem;
-    max-width: 600px;
+    max-width: 37.5rem;
   }
   .hero-text {
-    max-width: 400px;
+    max-width: 25rem;
   }
   .hero-image {
     justify-self: end;
@@ -251,6 +261,46 @@ p {
   padding: 0 1rem;
 }
 
+@media (min-width: 891px) {
+  .about {
+    padding: 6rem 0;
+  }
+  .about-content {
+    padding: 0;
+    text-align: left;
+  }
+  .about-title {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    max-width: 37.5rem;
+  }
+  .about-text {
+    max-width: 25rem;
+  }
+  .about .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-box {
+    margin-bottom: 2rem;
+  }
+  .about-box__header {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    background-color: transparent;
+  }
+  .about-box span {
+    width: 4rem;
+    height: 2.5rem;
+  }
+  .about-box h3 {
+    font-size: 1rem;
+    margin-left: 1.5rem;
+  }
+  .about-box__text {
+    padding-left: 6rem;
+  }
+}
 .testimonials {
   text-align: center;
   padding-bottom: 2rem;
