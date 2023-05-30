@@ -335,7 +335,6 @@ p {
   top: 0;
   left: 0;
   flex: 1 0 100vw;
-  height: auto;
 }
 @media (min-width: 891px) {
   .testimonials-card {
@@ -345,6 +344,10 @@ p {
 .testimonials-card h2 {
   font-size: 1rem;
   margin-bottom: 1.5rem;
+}
+.testimonials-card p {
+  max-width: 470px;
+  margin: 0 auto;
 }
 .testimonials-card img {
   height: 5rem;

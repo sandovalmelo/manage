@@ -26,7 +26,6 @@
 		top: 0;
 		left: 0;
 		flex: 1 0 100vw;
-		height: auto;
 
 		@media (min-width: $large-screens) {
 			flex: 1 0 37.5rem;
@@ -35,6 +34,11 @@
 		h2 {
 			font-size: 1rem;
 			margin-bottom: 1.5rem;
+		}
+
+		p {
+			max-width: 470px;
+			margin: 0 auto;
 		}
 
 		img {

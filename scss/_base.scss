@@ -20,6 +20,7 @@ $large-screens: 891px;
 body {
 	font-family: "Be Vietnam Pro", sans-serif;
 	color: $grayish-blue;
+	// overflow-x: hidden;
 	background: url("./../images/bg-tablet-pattern.svg") no-repeat 4rem -4rem / contain,
 		url("./../images/bg-tablet-pattern.svg") no-repeat right -15rem top 23rem / contain;
 
