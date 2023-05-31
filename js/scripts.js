@@ -13,4 +13,3 @@ menuClose.addEventListener("click", () => {
 
 const slide = new Slide("slides", "testimonials-container");
 slide.init();
-console.log(slide);
