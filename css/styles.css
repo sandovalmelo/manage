@@ -358,12 +358,13 @@ p {
   margin-bottom: 2rem;
 }
 .testimonials .slides-control .control {
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   display: inline-block;
   border: solid 1px hsl(12, 88%, 59%);
   border-radius: 50%;
-  margin: 0 2px;
+  margin: 0 4px;
+  cursor: pointer;
 }
 .testimonials .slides-control .active {
   background-color: hsl(12, 88%, 59%);

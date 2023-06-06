@@ -1,4 +1,4 @@
-import Slides from "./slides.js";
+import SlidesNav from "./slides.js";
 const menu = document.getElementById("menu");
 const menuOpen = document.getElementById("menu-open");
 const menuClose = document.getElementById("menu-close");
@@ -11,7 +11,6 @@ menuClose.addEventListener("click", () => {
 	menu.setAttribute("data-open", "false");
 });
 
-const slides = new Slides("slides", "testimonials-container");
+const slides = new SlidesNav("slides", "testimonials-container");
 slides.init();
-slides.changeSlide(2);
-slides.activNextSlide();
+slides.addControl(".slides-control");

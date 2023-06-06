@@ -1,6 +1,6 @@
 import debounce from "./debounce.js";
 
-export default class Slides {
+export class Slides {
 	constructor(slides, container) {
 		this.slides = document.getElementById(slides);
 		this.container = document.getElementById(container);
@@ -10,6 +10,7 @@ export default class Slides {
 			movement: 0
 		};
 		this.activeClass = "active";
+		this.changeEvent = new Event("changeEvent");
 	}
 
 	transition(active) {
@@ -105,6 +106,7 @@ export default class Slides {
 		this.slidesIndexNav(index);
 		this.dist.finalPosition = activeSlide.position;
 		this.changeActiveSlide();
+		this.container.dispatchEvent(this.changeEvent);
 	}
 
 	changeActiveSlide() {
@@ -144,6 +146,39 @@ export default class Slides {
 		this.addSlidesEvents();
 		this.slidesConfig();
 		this.addResizeEvent();
+		this.changeSlide(0);
 		return;
+	}
+}
+
+export default class SlidesNav extends Slides {
+	constructor(slides, container) {
+		super(slides, container);
+		this.bindControlEvents();
+	}
+
+	eventControl(item, index) {
+		item.addEventListener("click", (event) => {
+			event.preventDefault();
+			this.changeSlide(index);
+		});
+		this.container.addEventListener("changeEvent", this.activeControlItem);
+	}
+
+	activeControlItem() {
+		this.controlArray.forEach((item) => item.classList.remove(this.activeClass));
+		this.controlArray[this.index.active].classList.add(this.activeClass);
+	}
+
+	addControl(customControl) {
+		this.control = document.querySelector(customControl);
+		this.controlArray = [...this.control.children];
+		this.activeControlItem();
+		this.controlArray.forEach(this.eventControl);
+	}
+
+	bindControlEvents() {
+		this.eventControl = this.eventControl.bind(this);
+		this.activeControlItem = this.activeControlItem.bind(this);
 	}
 }

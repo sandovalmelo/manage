@@ -54,13 +54,14 @@
 		margin-bottom: 2rem;
 
 		.control {
-			$control-size: 10px;
+			$control-size: 14px;
 			width: $control-size;
 			height: $control-size;
 			display: inline-block;
 			border: solid 1px $bright-red;
 			border-radius: 50%;
-			margin: 0 2px;
+			margin: 0 4px;
+			cursor: pointer;
 		}
 
 		.active {
