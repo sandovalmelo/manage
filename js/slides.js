@@ -1,3 +1,5 @@
+import debounce from "./debounce.js";
+
 export default class Slides {
 	constructor(slides, container) {
 		this.slides = document.getElementById(slides);
@@ -72,21 +74,15 @@ export default class Slides {
 		this.container.addEventListener("touchend", this.onEnd);
 	}
 
-	bindEvents() {
-		this.onStart = this.onStart.bind(this);
-		this.onMove = this.onMove.bind(this);
-		this.onEnd = this.onEnd.bind(this);
-	}
-
 	// Slidess config
-	slidesConfig(slide) {
+	slidesPosition(slide) {
 		const margin = (this.container.offsetWidth - slide.offsetWidth) / 2;
 		return -(slide.offsetLeft - margin);
 	}
 
-	slidessConfig() {
+	slidesConfig() {
 		this.slidesArray = [...this.slides.children].map((element) => {
-			const position = this.slidesConfig(element);
+			const position = this.slidesPosition(element);
 			return {
 				element,
 				position
@@ -124,11 +120,30 @@ export default class Slides {
 		if (this.index.next !== undefined) this.changeSlide(this.index.next);
 	}
 
+	onResize() {
+		setTimeout(() => {
+			this.slidesConfig();
+			this.changeSlide(this.index.active);
+		}, 1000);
+	}
+
+	addResizeEvent() {
+		window.addEventListener("resize", this.onResize);
+	}
+
+	bindEvents() {
+		this.onStart = this.onStart.bind(this);
+		this.onMove = this.onMove.bind(this);
+		this.onEnd = this.onEnd.bind(this);
+		this.onResize = debounce(this.onResize.bind(this), 200);
+	}
+
 	init() {
 		this.bindEvents();
 		this.transition(true);
 		this.addSlidesEvents();
-		this.slidessConfig();
+		this.slidesConfig();
+		this.addResizeEvent();
 		return;
 	}
 }
