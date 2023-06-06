@@ -13,3 +13,5 @@ menuClose.addEventListener("click", () => {
 
 const slides = new Slides("slides", "testimonials-container");
 slides.init();
+slides.changeSlide(2);
+slides.activNextSlide();
