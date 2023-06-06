@@ -7,6 +7,7 @@ export default class Slides {
 			startX: 0,
 			movement: 0
 		};
+		this.activeClass = "active";
 	}
 
 	transition(active) {
@@ -107,6 +108,12 @@ export default class Slides {
 		this.moveSlides(activeSlide.position);
 		this.slidesIndexNav(index);
 		this.dist.finalPosition = activeSlide.position;
+		this.changeActiveSlide();
+	}
+
+	changeActiveSlide() {
+		this.slidesArray.forEach((item) => item.element.classList.remove(this.activeClass));
+		this.slidesArray[this.index.active].element.classList.add(this.activeClass);
 	}
 
 	activPrevSlide() {
