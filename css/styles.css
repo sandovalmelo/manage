@@ -53,16 +53,23 @@ h2 {
   padding: 0 1.5rem;
   border-radius: 100px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .primary-btn {
   background-color: hsl(12, 88%, 59%);
   color: hsl(13, 100%, 96%);
 }
+.primary-btn:hover {
+  background-color: #f6866a;
+}
 
 .secondary-btn {
   background-color: hsl(0, 0%, 98%);
   color: hsl(12, 88%, 59%);
+}
+.secondary-btn:hover {
+  color: #f9ad9a;
 }
 
 p {
@@ -180,6 +187,9 @@ p {
   .menu-nav a {
     color: hsl(228, 39%, 23%);
     font-weight: 500;
+  }
+  .menu-nav a:hover {
+    color: hsl(227, 12%, 61%);
   }
 }
 .hero {
@@ -460,12 +470,16 @@ p {
 }
 .footer .social-media {
   display: flex;
+  justify-content: space-between;
   gap: 2rem;
   margin-bottom: 4rem;
   padding: 0 1rem;
 }
-.footer .social-media img {
-  flex-grow: 1;
+.footer .social-media svg {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+  fill: hsl(0, 0%, 98%);
 }
 
 @media (min-width: 891px) {
@@ -486,6 +500,10 @@ p {
   .footer .social-media {
     margin-bottom: 0;
   }
+  .footer .social-media svg:hover {
+    cursor: pointer;
+    fill: hsl(12, 88%, 59%);
+  }
   .footer-email {
     display: flex;
     flex-direction: column;
@@ -493,6 +511,10 @@ p {
   }
   .footer-email input {
     width: 200px;
+  }
+  .footer-email button:hover {
+    background-color: #f6866a;
+    cursor: pointer;
   }
   .footer .copyright {
     position: unset;

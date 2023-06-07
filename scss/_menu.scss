@@ -118,6 +118,10 @@
 			a {
 				color: $dark-blue;
 				font-weight: 500;
+
+				&:hover {
+					color: $grayish-blue;
+				}
 			}
 		}
 	}

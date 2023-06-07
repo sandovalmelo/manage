@@ -65,16 +65,25 @@ h2 {
 	padding: 0 1.5rem;
 	border-radius: 100px;
 	font-weight: 700;
+	cursor: pointer;
 }
 
 .primary-btn {
 	background-color: $bright-red;
 	color: $pale-red;
+
+	&:hover {
+		background-color: lighten($bright-red, 10%);
+	}
 }
 
 .secondary-btn {
 	background-color: $light-gray;
 	color: $bright-red;
+
+	&:hover {
+		color: lighten($bright-red, 20%);
+	}
 }
 
 p {

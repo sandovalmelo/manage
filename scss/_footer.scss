@@ -75,12 +75,16 @@
 
 	.social-media {
 		display: flex;
+		justify-content: space-between;
 		gap: 2rem;
 		margin-bottom: 4rem;
 		padding: 0 1rem;
 
-		img {
-			flex-grow: 1;
+		svg {
+			width: 100%;
+			max-width: 50px;
+			height: auto;
+			fill: $light-gray;
 		}
 	}
 }
@@ -106,6 +110,11 @@
 
 		.social-media {
 			margin-bottom: 0;
+
+			svg:hover {
+				cursor: pointer;
+				fill: $bright-red;
+			}
 		}
 
 		&-email {
@@ -115,6 +124,11 @@
 
 			input {
 				width: 200px;
+			}
+
+			button:hover {
+				background-color: lighten($bright-red, 10%);
+				cursor: pointer;
 			}
 		}
 
