@@ -14,28 +14,53 @@
 		form {
 			display: flex;
 			gap: 0.75rem;
+			position: relative;
+
+			.email-msg {
+				position: absolute;
+				top: 55px;
+				left: 1rem;
+				font-size: 0.75rem;
+				color: #d81515;
+				display: none;
+			}
+
+			input {
+				height: $height;
+				flex-grow: 1;
+				border: none;
+				font-family: inherit;
+				padding: 0 1rem;
+				border-radius: 100px;
+				font-size: 0.75rem;
+			}
+
+			button {
+				height: $height;
+				width: 5rem;
+				background-color: $bright-red;
+				color: $light-gray;
+				font-family: inherit;
+				font-weight: 700;
+				border: none;
+				border-radius: 100px;
+				text-transform: uppercase;
+			}
 		}
 
-		input {
-			height: $height;
-			flex-grow: 1;
-			border: none;
-			font-family: inherit;
-			padding: 0 1rem;
-			border-radius: 100px;
-			font-size: 0.75rem;
-		}
+		form.invalid-email {
+			.email-msg {
+				display: block;
+			}
 
-		button {
-			height: $height;
-			width: 5rem;
-			background-color: $bright-red;
-			color: $light-gray;
-			font-family: inherit;
-			font-weight: 700;
-			border: none;
-			border-radius: 100px;
-			text-transform: uppercase;
+			input {
+				color: $simple-red;
+				border: solid 1.5px $simple-red;
+			}
+
+			input:focus {
+				outline-color: $simple-red;
+			}
 		}
 	}
 
@@ -138,13 +163,15 @@
 			flex-direction: column;
 			justify-content: space-between;
 
-			input {
-				width: 200px;
-			}
+			form {
+				input {
+					width: 200px;
+				}
 
-			button:hover {
-				background-color: lighten($bright-red, 10%);
-				cursor: pointer;
+				button:hover {
+					background-color: lighten($bright-red, 10%);
+					cursor: pointer;
+				}
 			}
 		}
 

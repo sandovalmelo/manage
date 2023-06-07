@@ -420,8 +420,17 @@ p {
 .footer-email form {
   display: flex;
   gap: 0.75rem;
+  position: relative;
 }
-.footer-email input {
+.footer-email form .email-msg {
+  position: absolute;
+  top: 55px;
+  left: 1rem;
+  font-size: 0.75rem;
+  color: #d81515;
+  display: none;
+}
+.footer-email form input {
   height: 2.75rem;
   flex-grow: 1;
   border: none;
@@ -430,7 +439,7 @@ p {
   border-radius: 100px;
   font-size: 0.75rem;
 }
-.footer-email button {
+.footer-email form button {
   height: 2.75rem;
   width: 5rem;
   background-color: hsl(12, 88%, 59%);
@@ -440,6 +449,16 @@ p {
   border: none;
   border-radius: 100px;
   text-transform: uppercase;
+}
+.footer-email form.invalid-email .email-msg {
+  display: block;
+}
+.footer-email form.invalid-email input {
+  color: #d81515;
+  border: solid 1.5px #d81515;
+}
+.footer-email form.invalid-email input:focus {
+  outline-color: #d81515;
 }
 .footer .copyright {
   font-size: 0.8rem;
@@ -520,10 +539,10 @@ p {
     flex-direction: column;
     justify-content: space-between;
   }
-  .footer-email input {
+  .footer-email form input {
     width: 200px;
   }
-  .footer-email button:hover {
+  .footer-email form button:hover {
     background-color: #f6866a;
     cursor: pointer;
   }
